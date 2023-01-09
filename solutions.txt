@@ -1,5 +1,3 @@
-#Create a new repository in the GitHub. Name it Iron+ your name. Example: if your name is Alvaro, you will name the repo IronAlvaro.
-
 #Clone that repo to your computer.
 git init
 git remote add origin https://github.com/joanafloresc/IronJoana.git
@@ -40,6 +38,5 @@ git commit -m "joana changes"
 
 #Create a pull request to make changes appear in the original repository.
 git push --set-upstream origin classmate
-
 
 #Merge the branch your classmate created. Now everyone's repos should have the original file (about.txt) as well as the new one with your classmate's name.
