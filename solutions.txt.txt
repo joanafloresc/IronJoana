@@ -1,0 +1,45 @@
+#Create a new repository in the GitHub. Name it Iron+ your name. Example: if your name is Alvaro, you will name the repo IronAlvaro.
+
+#Clone that repo to your computer.
+git init
+git remote add origin https://github.com/joanafloresc/IronJoana.git
+
+#Create a file in that folder. Name it about.txt and add a fun fact about yourself. (You can use the command line: touch nameOfTheFile.txt).
+touch about.txt
+vim about.txt
+# esc + :wq + enter
+
+#Add the file you just created to the git.
+git add about.txt
+
+#Commit the changes.
+git commit -m "lab exercise"
+
+#Push the changes to the GitHub and check your repository to make sure everything is there.
+git push -u origin master
+
+#Fork your classmate's repository.
+
+#Clone the repository, so that you have it locally and can make changes.
+git clone https://github.com/joanafloresc/kaar1998.git
+
+#Create a new branch named classmate.
+git branch classmate
+switch classmate
+
+#Create a new file with your name (ex. maya.txt) and finish the following sentence I enrolled Ironhack's Data Analytics bootcamp because.... When you are done, save the changes.
+touch joanaflores.txt
+vim joanaflores.txt
+# esc + :wq + enter
+
+#Add the changes to the git.
+git add joanaflores.txt
+
+#Commit and push the changes. Now, all the changes should be on your GitHub, inside the forked repository.
+git commit -m "joana changes"
+
+#Create a pull request to make changes appear in the original repository.
+git push --set-upstream origin classmate
+
+
+#Merge the branch your classmate created. Now everyone's repos should have the original file (about.txt) as well as the new one with your classmate's name.
